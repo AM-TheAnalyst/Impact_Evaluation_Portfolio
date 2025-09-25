@@ -1,5 +1,3 @@
-cd "C:\STATA-Quant\BGD_2009_HIEQMP_v01_M_STATA8\" 
-log using "PSM.log", append
 * Download ado files for pscore
 use hh_98.dta, clear
 
@@ -63,3 +61,4 @@ atts $oylist $mtreatment $xxlist, pscore(myscore) blockid(myblock) comsup
 
 
 log close
+
