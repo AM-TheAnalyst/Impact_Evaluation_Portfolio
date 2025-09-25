@@ -28,8 +28,8 @@ regress l_exptot dfmfd98 year dfmfdyr $xlist
 xtdescribe
 xtset nh year
 xtreg l_exptot dfmfd98 year dfmfdyr, fe i(nh)
-
 xtreg l_exptot dfmfd98 year dfmfdyr $xlist, fe i(nh)
+
 
 
 
