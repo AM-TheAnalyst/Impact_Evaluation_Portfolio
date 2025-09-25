@@ -16,13 +16,13 @@ egen dfmfd98=max(dfmfd1), by (nh)
 gen dfmfdyr=dfmfd98*year
 
 regress l_exptot dfmfd98 year dfmfdyr 
-** Increase in 11% for women who participated in the microfinance program.
+** An increase of 11% in household per capita expenditure for women who participated in the microfinance program.
 
 * Control for time-variant covariates
 gen l_land=log(1+hhland)
 global xlist sexhead agehead educhead l_land vaccess pcirr rice milk wheat oil egg 
 regress l_exptot dfmfd98 year dfmfdyr $xlist
-** By holding other factors constant, the impact of microfinance programs on total expenditure changes from significannt to insignificant (t=0.97)
+** By holding other factors constant, the impact of microfinance programs on total expenditure changes from significant to insignificant (t=0.97)
 
 * Fixed-effects regression:Checking for robustness of DID
 xtdescribe
@@ -30,6 +30,6 @@ xtset nh year
 xtreg l_exptot dfmfd98 year dfmfdyr, fe i(nh)
 
 xtreg l_exptot dfmfd98 year dfmfdyr $xlist, fe i(nh)
-** Upon controlling for unobserved and time-Invariant characteristics, female microfinance participation has a 9% positive impact on househild per capita expenditure
+
 
 
