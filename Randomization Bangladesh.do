@@ -1,6 +1,6 @@
 use "hh_98.dta"
 
-* Randomization, begin by looking at the impact of village program placement on the outcome
+* Begin by looking at the impact of village program placement on the outcome
 gen l_exptot=log(1+exptot)
 label variable l_exptot "Natural log of total expenditure"
 gen l_land=log(1+hhland/100)
@@ -86,3 +86,4 @@ regress $ylist $treatmentf $xlist if $treatmentf2 ==0 [pw=weight]
 
 
 log close
+
