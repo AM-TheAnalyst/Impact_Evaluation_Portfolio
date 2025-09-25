@@ -16,7 +16,7 @@ Projects Overview:
 
 **Results:**  Bangladesh microfinance program increased total expenditure by between  419-822 Tk/year 
 
-2.** Randomization**
+2. Randomization
    
 **Objective:** Estimate the impact of village program placement on outcome as well as the impact of program placement on outcome (per capita total expenditure)
 
@@ -32,7 +32,7 @@ Projects Overview:
 
 **Results:** Upon controlling for regressors, female participation increases per capita expenditure of households in program villages by 6.7%
 
-3.** Difference in differences**
+3. Difference in differences
 
 **Objective:** Estimate the impact of female participation on household per capita total expenditure 
 
