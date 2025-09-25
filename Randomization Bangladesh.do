@@ -1,6 +1,3 @@
-cd "C:\STATA-Quant\BGD_2009_HIEQMP_v01_M_STATA8\" 
-log using Randomization.log
- 
 use "hh_98.dta"
 
 * Randomization, begin by looking at the impact of village program placement on the outcome
@@ -49,6 +46,7 @@ regress $ylist $treatmentf2 $xlist if $treatmentf==1 [pw=weight]
 
 * Spillovers- does program placement in villages have any impacts on non-participants?
 regress $ylist $treatmentf $xlist if $treatmentf2 ==0 [pw=weight]
+
 
 
 
