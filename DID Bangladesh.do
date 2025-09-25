@@ -1,6 +1,3 @@
-cd "C:\STATA-Quant\BGD_2009_HIEQMP_v01_M_STATA8\" 
-log using DID.log, append 
-
 use hh_9198.dta
 
 gen exptotz=exptot if year==0
@@ -34,4 +31,5 @@ xtreg l_exptot dfmfd98 year dfmfdyr, fe i(nh)
 
 xtreg l_exptot dfmfd98 year dfmfdyr $xlist, fe i(nh)
 ** Upon controlling for unobserved and time-Invariant characteristics, female microfinance participation has a 9% positive impact on househild per capita expenditure
+
 
