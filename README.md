@@ -1,7 +1,9 @@
 # Impact_Evaluation_Portfolio
 This portfolio showcases a collection of applied impact evaluation projects conducted in Stata. It uses the Bangladesh household survey conducted by the Bangladesh Development Institute and the World Bank 1991/1992-1998/1999  Khandker, S. R., & Bangladesh Institute of Development Studies. (2013). Long-Term Impact of Microcredit Impacts 1998-1999 [Data set]. World Bank, Development Data Group. https://doi.org/10.48529/B28E-KM94
 Projects Overview:
-1. Propensity Score Matching (PSM)
+
+1. **Propensity Score Matching (PSM)**
+   
 **Objective:** Estimate the impact of Bangladesh microfinance programs on per capita total expenditure (outcome)
 
 **Methods:** Propensity score estimation (logit), matching and ATT estimation (nearest neighbor, kernel,radius and stratified sampling)
@@ -14,7 +16,8 @@ Projects Overview:
 
 **Results:**  Bangladesh microfinance program increased total expenditure by between  419-822 Tk/year 
 
-3. Randomization
+2.** Randomization**
+   
 **Objective:** Estimate the impact of village program placement on outcome as well as the impact of program placement on outcome (per capita total expenditure)
 
 **Methods:** Regression using Ordinary Least Squares( OLS) with treatment dummy
@@ -29,7 +32,7 @@ Projects Overview:
 
 **Results:** Upon controlling for regressors, female participation increases per capita expenditure of households in program villages by 6.7%
 
-4. Difference in differences 
+3.** Difference in differences**
 
 **Objective:** Estimate the impact of female participation on household per capita total expenditure 
 
